@@ -1,0 +1,126 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style type="text/css">
+    #banner{
+        background-image:url("../Content/images/banner.jpg");
+        background-size:cover;
+        background-position:center;
+        height:400px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        vertical-align:middle;
+    }
+
+    .banner-content{
+        text-align:center;
+        color:white;
+    }
+
+    .banner-content h2{
+        font-size:2.5rem;
+    }
+
+    .banner-content p{
+        font-size:2rem;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:5px 20px;
+        background-color: darkolivegreen;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    #featureProd{
+        text-align:center;
+    }
+
+    #featureProd h2{
+        font-size:2rem;
+        margin-bottom:20px;
+    }
+
+    .prodContainer{
+        display:flex;
+        justify-content:center;
+        gap: 10px;
+    }
+
+    .product-item{
+        width:200px;
+    }
+
+    .product-item img{
+        max-width:150px;
+
+    }
+
+        .product-item h3{
+            font-size:16px;
+            color: black;
+            margin:10px 0px;
+        }
+
+        .prodDescription{
+            font: arial;
+            font-size: 10px;
+            color: lightgrey;
+        }
+
+    .prodPrice {
+        font-size: 12px;
+        color: black;
+        font-weight:bold;
+    }
+</style>
+
+<secction id="banner">
+    <div class="banner-content">
+        <h2>Ciao</h2>
+        <p>delulu</p>
+        <a href="#" class="btn">Bắt đầu mua sắm</a>
+    </div>
+</secction>
+
+    <section id="search" class="content-section">
+
+    </section>
+
+    <section id="featureProd" class="content-section">
+        <h2>Sản phẩm nổi bật</h2>
+
+        <div class="prodContainer">
+            <div class="product-item">
+                <img src="~/Content/images/ip16.jpg" />
+                <h3>Iphone 16</h3>
+                <p class="prodDescription">xịn hơn 15</p>
+                <p class="prodPrice">34.790.000đ</p>
+            </div>
+
+            <div class="product-item">
+                <img src="~/Content/images/ip15.jpg" />
+                <h3>Iphone 15</h3>
+                <p class="prodDescription">xịn</p>
+                <p class="prodPrice">29.490.000đ</p>
+            </div>
+
+            <div class="product-item">
+                <img src="~/Content/images/ss23.jpg" />
+                <h3>Samsung Galaxy S23</h3>
+                <p class="prodDescription">mạnh</p>
+                <p class="prodPrice">24.990.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productList">
+
+    </section>
+
+

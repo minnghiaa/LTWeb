@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<html>
+<head>
+    <title>Welcome: Sử dụng Input + Alert, viết JS dưới dạng Inline JavaScript</title>
+</head>
+
+<body>
+    <form name="Welcome">
+        <input type="text" name="txtName"
+               @*value="Welcome to Javascript"*@
+               size="50" maxlength="30"/>
+        <input type="tel" name="txtTel"
+               form="xxx-xxxxxxxxx" />
+        <input type="button" name="btn_welcome" value="Welcome"
+               onclick="DisplayMsg(txtName.value);"/>
+    </form>
+
+    <script language="Javascript">
+        function DisplaymMsg(msg) {
+            alert(msg);
+        }
+    </script>
+</body>
+</html>
+
+
